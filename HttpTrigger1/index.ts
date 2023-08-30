@@ -7,14 +7,14 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
   console.log("inputText", inputText)
 
   const patterns = [
-    /I am (w+)/i,
-    /My name is (w+)/i,
-    /I'm (w+)/i,
-    /This is (w+)/i,
-    /Call me (w+)/i,
-    /Hi, I'm (w+)/i,
-    /Hello, my name is (w+)/i,
-    /Hey, call me (w+)/i,
+    /I am (\w+)/i,
+    /My name is (\w+)/i,
+    /I'm (\w+)/i,
+    /This is (\w+)/i,
+    /Call me (\w+)/i,
+    /Hi, I'm (\w+)/i,
+    /Hello, my name is (\w+)/i,
+    /Hey, call me (\w+)/i,
   ]
 
   let extractedName = null
